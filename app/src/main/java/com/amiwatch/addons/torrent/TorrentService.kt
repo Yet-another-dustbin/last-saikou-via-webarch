@@ -1,6 +1,6 @@
 /**
  * modified source from
- * https://github.com/rebelonion/Amiwatch/pull/305
+ * https://github.com/amritokun/Amiwatch/pull/305
  * and https://github.com/LuftVerbot/kuukiyomi
  * all credits to the original authors
  */
