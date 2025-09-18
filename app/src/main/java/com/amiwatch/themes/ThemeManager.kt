@@ -42,17 +42,17 @@ class ThemeManager(private val context: Activity) {
         val theme: String = PrefManager.getVal(PrefName.Theme)
 
         val themeToApply = when (theme) {
-            "BLUE" -> if (useOLED) R.style.Theme_Dantotsu_BlueOLED else R.style.Theme_Dantotsu_Blue
-            "GREEN" -> if (useOLED) R.style.Theme_Dantotsu_GreenOLED else R.style.Theme_Dantotsu_Green
-            "PURPLE" -> if (useOLED) R.style.Theme_Dantotsu_PurpleOLED else R.style.Theme_Dantotsu_Purple
-            "PINK" -> if (useOLED) R.style.Theme_Dantotsu_PinkOLED else R.style.Theme_Dantotsu_Pink
-            "ORIAX" -> if (useOLED) R.style.Theme_Dantotsu_OriaxOLED else R.style.Theme_Dantotsu_Oriax
-            "SAIKOU" -> if (useOLED) R.style.Theme_Dantotsu_SaikouOLED else R.style.Theme_Dantotsu_Saikou
-            "RED" -> if (useOLED) R.style.Theme_Dantotsu_RedOLED else R.style.Theme_Dantotsu_Red
-            "LAVENDER" -> if (useOLED) R.style.Theme_Dantotsu_LavenderOLED else R.style.Theme_Dantotsu_Lavender
-            "OCEAN" -> if (useOLED) R.style.Theme_Dantotsu_OceanOLED else R.style.Theme_Dantotsu_Ocean
-            "MONOCHROME (BETA)" -> if (useOLED) R.style.Theme_Dantotsu_MonochromeOLED else R.style.Theme_Dantotsu_Monochrome
-            else -> if (useOLED) R.style.Theme_Dantotsu_PurpleOLED else R.style.Theme_Dantotsu_Purple
+            "BLUE" -> if (useOLED) R.style.Theme_Amiwatch_BlueOLED else R.style.Theme_Amiwatch_Blue
+            "GREEN" -> if (useOLED) R.style.Theme_Amiwatch_GreenOLED else R.style.Theme_Amiwatch_Green
+            "PURPLE" -> if (useOLED) R.style.Theme_Amiwatch_PurpleOLED else R.style.Theme_Amiwatch_Purple
+            "PINK" -> if (useOLED) R.style.Theme_Amiwatch_PinkOLED else R.style.Theme_Amiwatch_Pink
+            "ORIAX" -> if (useOLED) R.style.Theme_Amiwatch_OriaxOLED else R.style.Theme_Amiwatch_Oriax
+            "SAIKOU" -> if (useOLED) R.style.Theme_Amiwatch_SaikouOLED else R.style.Theme_Amiwatch_Saikou
+            "RED" -> if (useOLED) R.style.Theme_Amiwatch_RedOLED else R.style.Theme_Amiwatch_Red
+            "LAVENDER" -> if (useOLED) R.style.Theme_Amiwatch_LavenderOLED else R.style.Theme_Amiwatch_Lavender
+            "OCEAN" -> if (useOLED) R.style.Theme_Amiwatch_OceanOLED else R.style.Theme_Amiwatch_Ocean
+            "MONOCHROME (BETA)" -> if (useOLED) R.style.Theme_Amiwatch_MonochromeOLED else R.style.Theme_Amiwatch_Monochrome
+            else -> if (useOLED) R.style.Theme_Amiwatch_PurpleOLED else R.style.Theme_Amiwatch_Purple
         }
 
         val window = context.window
