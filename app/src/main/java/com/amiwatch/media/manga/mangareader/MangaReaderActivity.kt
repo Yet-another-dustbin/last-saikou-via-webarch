@@ -415,15 +415,15 @@ class MangaReaderActivity : AppCompatActivity() {
                 val rpcenabled: Boolean = PrefManager.getVal(PrefName.rpcEnabled)
                 if ((isOnline(context) && !offline) && Discord.token != null && !incognito && rpcenabled) {
                     lifecycleScope.launch {
-                        val discordMode = PrefManager.getCustomVal("discord_mode", "dantotsu")
+                        val discordMode = PrefManager.getCustomVal("discord_mode", "Amiwatch")
                         val buttons = when (discordMode) {
                             "nothing" -> mutableListOf(
                                 RPC.Link(getString(R.string.view_manga), media.shareLink ?: ""),
                             )
 
-                            "dantotsu" -> mutableListOf(
+                            "Amiwatch" -> mutableListOf(
                                 RPC.Link(getString(R.string.view_manga), media.shareLink ?: ""),
-                                RPC.Link("Read on Dantotsu", getString(R.string.dantotsu))
+                                RPC.Link("Read on Amiwatch", getString(R.string.Amiwatch))
                             )
 
                             "anilist" -> {

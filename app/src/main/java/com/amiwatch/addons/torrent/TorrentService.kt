@@ -1,6 +1,6 @@
 /**
  * modified source from
- * https://github.com/rebelonion/Dantotsu/pull/305
+ * https://github.com/rebelonion/Amiwatch/pull/305
  * and https://github.com/LuftVerbot/kuukiyomi
  * all credits to the original authors
  */

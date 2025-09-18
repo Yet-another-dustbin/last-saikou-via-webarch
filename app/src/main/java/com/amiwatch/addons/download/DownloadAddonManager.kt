@@ -128,8 +128,8 @@ class DownloadAddonManager(
 
     companion object {
 
-        const val DOWNLOAD_PACKAGE = "dantotsu.downloadAddon"
+        const val DOWNLOAD_PACKAGE = "Amiwatch.downloadAddon"
         const val DOWNLOAD_CLASS = "com.amiwatch.downloadAddon.DownloadAddon"
-        const val REPO = "rebelonion/Dantotsu-Download-Addon"
+        const val REPO = "rebelonion/Amiwatch-Download-Addon"
     }
 }

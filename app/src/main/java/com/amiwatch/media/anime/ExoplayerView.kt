@@ -1422,7 +1422,7 @@ class ExoplayerView :
         val rpcenabled: Boolean = PrefManager.getVal(PrefName.rpcEnabled)
         if ((isOnline(context) && !offline) && Discord.token != null && !incognito && rpcenabled) {
             lifecycleScope.launch {
-                val discordMode = PrefManager.getCustomVal("discord_mode", "dantotsu")
+                val discordMode = PrefManager.getCustomVal("discord_mode", "Amiwatch")
                 val buttons =
                     when (discordMode) {
                         "nothing" ->
@@ -1430,10 +1430,10 @@ class ExoplayerView :
                                 RPC.Link(getString(R.string.view_anime), media.shareLink ?: ""),
                             )
 
-                        "dantotsu" ->
+                        "Amiwatch" ->
                             mutableListOf(
                                 RPC.Link(getString(R.string.view_anime), media.shareLink ?: ""),
-                                RPC.Link("Watch on Dantotsu", getString(R.string.dantotsu)),
+                                RPC.Link("Watch on Amiwatch", getString(R.string.Amiwatch)),
                             )
 
                         "anilist" -> {
@@ -1477,7 +1477,7 @@ class ExoplayerView :
                                         it,
                                     )
                                 },
-                            smallImage = RPC.Link("Dantotsu", Discord.small_Image),
+                            smallImage = RPC.Link("Amiwatch", Discord.small_Image),
                             buttons = buttons,
                         ),
                     )

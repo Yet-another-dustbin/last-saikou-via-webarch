@@ -27,7 +27,7 @@ import uy.kohesive.injekt.Injekt
 import uy.kohesive.injekt.api.get
 
 object CommentsAPI {
-    private const val API_ADDRESS: String = "https://api.dantotsu.app"
+    private const val API_ADDRESS: String = "https://api.Amiwatch.app"
     private const val LOCAL_HOST: String = "https://127.0.0.1"
     private var isOnline: Boolean = true
     private var commentsEnabled = PrefManager.getVal<Int>(PrefName.CommentsEnabled) == 1

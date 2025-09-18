@@ -121,7 +121,7 @@ class CommentNotificationTask : Task {
                         }
 
                         CommentNotificationWorker.NotificationType.DANTOTSU_UPDATE -> {
-                            val title = "Update from Dantotsu"
+                            val title = "Update from Amiwatch"
                             val message = it.content ?: "New feature available"
 
                             val commentStore = CommentStore(
